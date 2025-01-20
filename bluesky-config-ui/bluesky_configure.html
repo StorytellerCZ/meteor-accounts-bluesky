@@ -1,0 +1,17 @@
+<template name="configureLoginServiceDialogForBluesky">
+    <p>
+        First, you'll need to setup a Bluesky (atproto) Client ID and ensure that you have the Client Information saved in your public folder, preferably under: <code>/public/oauth/bluesky.json</code>. Follow these steps:
+    </p>
+    <ol>
+        <li>
+            Visit <a href="https://docs.bsky.app/docs/advanced-guides/oauth-client#client-and-server-metadata" target="_blank">https://docs.bsky.app/docs/advanced-guides/oauth-client</a>
+            and ensure that your metadata for Client Information is created in your public folder.
+        </li>
+        <li>
+            Set Authorization redirect URI to: <span class="url">{{siteUrl}}_oauth/bluesky</span>
+        </li>
+        <li>
+            Your Client ID is the location of the Client Information JSON. If you followed the example above it will be <code>{{siteUrl}}oauth/bluesky.json</code>
+        </li>
+    </ol>
+</template>
